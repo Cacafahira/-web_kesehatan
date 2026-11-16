@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - HealthyLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HealthyLife</h1>
+        <p>Hubungi Kami</p>
+    </header>
+
+    <nav>
+        <a href="index.html"Home></a>
+        <a href="artikel.html"Artikal></a>
+        <a href="kontak.html"kontak></a>
+    </nav>
+
+    <main class="kontak">
+        
+        <h2>Form konsultasi sederhana</h2>
+
+        <form onsubmit="KirimPesan(event)">
+            <label>Nama</label>
+            <input type="text" placeholder="Masukkan Nama" required>
+            
+            <label>Email</label>
+            <input type="email" placeholder="Masukan email" required>
+
+            <label>Keluhan</label>
+            <textarea placeholder="Tuliskan keluhan Anda" required></textarea>
+
+            <button type="submit">kirim</button>
+        
+        </form>
+    
+    </main>
+
+    <footer>
+        <p>© 2026 HealthyLife | website Informasi kesehatan</p>
+    </footer>
+
+    <script>
+        function KirimPesan(event) {
+            event.preventDefault();
+            alert("pesan berhasil dikirim!");
+        }
+    </script>
+    
+</body>
+</html>
